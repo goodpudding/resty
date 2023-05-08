@@ -8,7 +8,7 @@ function Form(props) {
     e.preventDefault();
     const formData = {
       method:'GET',
-      url: 'https://pokeapi.co/api/v2/pokemon',
+      url: 'https://cats.co/api/v2/cat',
     };
     props.handleApiCall(formData);
   }
