@@ -1,26 +1,100 @@
-$backgroundColor: #efefef;
-$radius: 40%;
-
 form {
-  display: inline-block;
-  margin: auto;
-  width: 200px;
-
-  label {
-    display: flex;
-    margin: 1rem 0;
-
-    &.methods {
-      span {
-        cursor: pointer;
-        margin-right: 1rem;
-        padding: .25rem .5rem;
-        background: #ccc;
-
-        &:hover, &.active {
-          background: #fff;
-        }
-      }
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
 }
+
+label {
+  margin: 1rem;
+}
+
+input[name='url'] {
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.methods {
+  display: flex;
+  justify-content: center;
+}
+
+.methods span {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.methods span:hover {
+  background-color: #ddd;
+}
+
+.methods span#post {
+  background-color: #2196F3;
+  color: white;
+}
+
+.methods span#put {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.methods span#delete {
+  background-color: #f44336;
+  color: white;
+}
+
+
+// $backgroundColor: #efefef;
+// $radius: 40%;
+
+// form {
+//   display: inline-block;
+//   margin: auto;
+//   width: 200px;
+
+//   label {
+//     display: flex;
+//     margin: 1rem 0;
+
+//     &.methods {
+//       span {
+//         cursor: pointer;
+//         margin-right: 1rem;
+//         padding: .25rem .5rem;
+//         background: #ccc;
+
+//         &:hover, &.active {
+//           background: #fff;
+//         }
+//       }
+//     }
+//   }
+// }
