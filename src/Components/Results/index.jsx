@@ -1,11 +1,12 @@
 import React, { Suspense } from 'react';
 import './Results.scss';
+import ReactJson from 'react-json-view'
 
 function Results({data}){
     return (
       <section>
            <Suspense fallback={<Loading />}>
-        <pre>{data ? JSON.stringify(data, undefined, 2) : null}</pre>
+           {data ? <ReactJson src={data} theme="ashes" / > : null}
         </Suspense>
       </section>
     );
